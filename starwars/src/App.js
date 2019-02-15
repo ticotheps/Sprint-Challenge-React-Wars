@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CharacterList from './components/CharacterList';
+import CharacterList from "./components/CharacterList";
 import './App.css';
 
 class App extends Component {
@@ -34,10 +34,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList />
+        <CharacterList 
+          starwarsChars={this.state.starwarsChars}  
+        />
       </div>
     );
+    // console.log(this.state.starwarsChars);
   }
+  
 }
 
 export default App;

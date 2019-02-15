@@ -2,8 +2,8 @@ import React from 'react';
 
 const Character = props => {
     return (
-        <div>
-            <h2>Hi! I'm a Character!</h2>
+        <div className="character-card">
+            <h2>Hello! I'm a Star Wars Character!</h2>
         </div>
     );
 };
