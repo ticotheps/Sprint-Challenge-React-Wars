@@ -33,10 +33,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <CharacterList 
-          starwarsChars={this.state.starwarsChars}  
-        />
+        <div className="Header-container">
+          <h1 className="Header">Welcome to React Wars!</h1>
+        </div>
+        <div className="character-list-container">
+          <p className="instructions">Hover over each card to reveal a React Wars character and their details!</p>
+          <CharacterList starwarsChars={this.state.starwarsChars} />
+        </div>
       </div>
     );
     // console.log(this.state.starwarsChars);
