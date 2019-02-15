@@ -2,11 +2,11 @@ import React from 'react';
 
 import Character from './Character';
 
-const CharacterList = props => {
+const CharacterList = () => {
     return(
-        {props.starwarsChars.map( character => (
-            <Character key={character.edited} character={character}/>
-        ))}
+        <div>
+            <Character />
+        </div>        
     );
 }
 
