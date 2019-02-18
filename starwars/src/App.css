@@ -1,8 +1,92 @@
 .App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
+.Header-container {
+  margin-top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  z-index: 3;
+}
+
 .Header {
+  margin-top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100px;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 85px;
+  font-style: italic;
+  background-color: orange;
+  color: blue;
+  border-top: 20px solid gray;
+  border-bottom: 20px solid gray;
+  z-index: 4;
 }
 /* write your parent styles in here for your App.js */
+
+.character-list-container {
+  margin-top: 150px;
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  border: 2px solid blue;
+  padding-bottom: 20px;
+}
+
+.character-card-container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.character-card {
+  background-color: orange;
+  width: 300px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 0 15px;
+  opacity: 0.1;
+  z-index: 2;
+}
+
+.character-card:hover {
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.character-name {
+  border: 2px solid gray;
+  background-color: white;
+  color: blue;
+  border-radius: 20px;
+}
+
+.character-name:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}
+
+.instructions {
+  font-size: 24px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
